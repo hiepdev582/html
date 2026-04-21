@@ -36,6 +36,10 @@ Always check web browser support:
     - `<main>` _(unique)_: `<article>`, `<section>`
     - `<aside>`
     - `<footer>`
+9. **Figure and caption**:
+    - `<figure>`
+    - `<figcaption>`
+      `<figure><img src="" alt=""><figcaption></figcaption></figure>`
 
 ### III. HTML Entities - Character References
 
@@ -104,3 +108,12 @@ Always check web browser support:
   `<script src="my-js-file.js" async></script>`
 - **defer**: Trình duyệt tải file JS song song với việc dựng HTML nhưng chỉ thực thi JS sau khi HTML đã được dựng xong hoàn toàn (ngay trước sự kiện DOMContentLoaded).
   `<script src="my-js-file.js" defer></script>`
+
+---
+
+## Web Optimization
+
+### I. Image Optimization
+
+1. Luôn set width hoặc / và height cho image
+2. Media assets and licensing
