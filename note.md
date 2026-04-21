@@ -30,6 +30,12 @@ Always check web browser support:
     - `<samp>Kết quả</samp>`
 7. **Time**:
     - `<time datetime="2022-01-01">2022-01-01</time>`
+8. **Structuring documents**:
+    - `<header>`
+    - `<nav>`
+    - `<main>` _(unique)_: `<article>`, `<section>`
+    - `<aside>`
+    - `<footer>`
 
 ### III. HTML Entities - Character References
 
@@ -44,6 +50,8 @@ Always check web browser support:
 | ≈         | Approximately equal   | &asymp;  |
 | ⊂         | Subset of             | &sub;    |
 | ⊃         | Superset of           | &sup;    |
+| ⊄         | Not subset of         | &nsub;   |
+| ⊅         | Not superset of       | &nsup;   |
 | ←         | Left arrow            | &larr;   |
 | →         | Right arrow           | &rarr;   |
 | ↑         | Up arrow              | &uarr;   |
