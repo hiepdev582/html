@@ -13,6 +13,24 @@ Always check web browser support:
 
 ### II. Semantics
 
+1. Dùng thẻ **heading** h1 - h6 hợp lý. Mỗi page phải có thẻ h1 và không nên quá 3 cấp heading
+2. **Emphasis tag**: em (tông giọng), strong (mức độ quan trọng), mark (đánh dấu)
+3. **Blockquote**:
+    - Block: `<blockquote cite="Nguồn trích dẫn">Nội dung trích dẫn</blockquote>`
+    - Inline: `<q cite="Nguồn trích dẫn">Nội dung trích dẫn</q>`
+    - Link: `<a href="Nguồn trích dẫn"><cite>Nội dung trích dẫn</cite></a>`
+4. **Abbreviations**:
+    - `<abbr title="Viết tắt">Viết tắt</abbr>`
+5. **Address**:
+    - `<address>Địa chỉ</address>`
+6. **Code**:
+    - `<code>Mã code</code>`
+    - `<var>Biến</var>`
+    - `<kbd>Phím</kbd>`
+    - `<samp>Kết quả</samp>`
+7. **Time**:
+    - `<time datetime="2022-01-01">2022-01-01</time>`
+
 ### III. HTML Entities - Character References
 
 | Character | Description           | Code     |
@@ -42,6 +60,8 @@ Always check web browser support:
 | ×         | Multiplication        | &times;  |
 | ÷         | Division              | &divide; |
 |           | Space                 | &nbsp;   |
+
+---
 
 ## Web page metadata
 
