@@ -42,3 +42,37 @@ Always check web browser support:
 | ×         | Multiplication        | &times;  |
 | ÷         | Division              | &divide; |
 |           | Space                 | &nbsp;   |
+
+## Web page metadata
+
+### I. Meta tags
+
+1. viewport
+   `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+2. charset
+   `<meta charset="UTF-8">`
+3. Đảm bảo Internet Explorer sử dụng engine mới nhất
+   `<meta http-equiv="X-UA-Compatible" content="ie=edge">`
+4. description
+   `<meta name="description" content="">`
+5. author
+   `<meta name="author" content="">`
+6. robots
+   `<meta name="robots" content="index, follow">`
+7. Open Graph
+   `<meta property="og:title" content="">`
+   `<meta property="og:description" content="">`
+   `<meta property="og:image" content="">`
+   `<meta property="og:url" content="">`
+   `<meta property="og:type" content="website">`
+8. Đổi màu thanh địa chỉ trên trình duyệt di động
+   `<meta name="theme-color" content="">`
+
+### II. Applying JS to HTML
+
+- **Mặc định**: Khi trình duyệt đọc đến thẻ script, nó sẽ dừng việc dựng HTML (block parsing) để tải file script về và thực thi nó ngay lập tức. Sau khi xong mới tiếp tục dựng nốt HTML. Điều này khiến trang web bị "đứng" nếu file JS nặng.
+  `<script src="my-js-file.js"></script>`
+- **async**: Trình duyệt tải file JS trong khi vẫn tiếp tục dựng HTML. Tuy nhiên, ngay khi file JS tải xong, nó sẽ tạm dừng HTML để thực thi JS. Không đảm bảo thứ tự thực thi. File nào tải xong trước sẽ chạy trước.
+  `<script src="my-js-file.js" async></script>`
+- **defer**: Trình duyệt tải file JS song song với việc dựng HTML nhưng chỉ thực thi JS sau khi HTML đã được dựng xong hoàn toàn (ngay trước sự kiện DOMContentLoaded).
+  `<script src="my-js-file.js" defer></script>`
