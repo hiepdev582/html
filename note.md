@@ -40,6 +40,47 @@ Always check web browser support:
     - `<figure>`
     - `<figcaption>`
       `<figure><img src="" alt=""><figcaption></figcaption></figure>`
+10. **Video**:
+    - ```html
+      <video
+          controls
+          width="400"
+          height="400"
+          autoplay
+          loop
+          muted
+          preload="auto"
+          poster="poster.png"
+      >
+          <source src="video1.mp4" type="video/mp4" />
+          <source src="video2.webm" type="video/webm" />
+          <track kind="subtitles" src="subtitles_vi.vtt" srclang="vi" label="Vietnamese" />
+          <track kind="captions" src="captions_vi.vtt" srclang="vi" label="Vietnamese" />
+          <track kind="descriptions" src="descriptions_vi.vtt" srclang="vi" label="Vietnamese" />
+          <track kind="chapters" src="chapters.vtt" srclang="vi" label="Vietnamese" />
+          <p>
+              Your browser doesn't support this video. Here is a
+              <a href="video1.mp4">link to the video</a> instead.
+          </p>
+      </video>
+      ```
+11. **Audio**:
+    - ```html
+      <audio controls autoplay loop muted preload="auto">
+          <source src="audio1.mp3" type="audio/mpeg" />
+          <source src="audio2.ogg" type="audio/ogg" />
+          <track kind="subtitles" src="subtitles_vi.vtt" srclang="vi" label="Vietnamese" />
+          <track kind="captions" src="captions_vi.vtt" srclang="vi" label="Vietnamese" />
+          <track kind="descriptions" src="descriptions_vi.vtt" srclang="vi" label="Vietnamese" />
+          <track kind="chapters" src="chapters.vtt" srclang="vi" label="Vietnamese" />
+          <p>
+              Your browser doesn't support this audio file. Here is a
+              <a href="audio1.mp3">link to the audio</a> instead.
+          </p>
+      </audio>
+      ```
+12. **Table**:
+    - scope attribute
 
 ### III. HTML Entities - Character References
 
