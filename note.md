@@ -338,3 +338,15 @@ Always check web browser support:
 
 1. Luôn set width hoặc / và height cho image
 2. Media assets and licensing
+
+### II. Constraint validation
+
+1. pattern
+2. min
+3. max
+4. required
+5. step
+6. minLength
+7. maxLength
+
+=> **HTMLFormElement**: checkValidity(), reportValidity(), setCustomValidity()
