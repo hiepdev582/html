@@ -253,7 +253,7 @@ Always check web browser support:
         </p>
     </object>
     ```
-27. **itemprops**
+27. **Microdata: itemscope + itemprops + itemtype**
     ```html
     <div itemscope itemtype="https://schema.org/Person">
         <span itemprop="name">John Doe</span>
@@ -261,6 +261,17 @@ Always check web browser support:
         <span itemprop="email">[EMAIL_ADDRESS]</span>
     </div>
     ```
+28. **Microformats**
+
+**Class:**
+
+- h-\* (Root/Object): Dùng để xác định "Gốc" của một đối tượng (h = hierarchy)
+- p-\* (Plain text): Dùng cho dữ liệu dạng văn bản thuần túy
+- u-\* (URL): Dùng cho các liên kết hoặc tài nguyên đa phương tiện
+- dt-\* (Date/Time): Dùng cho ngày tháng và thời gian
+- e-\* (Embedded HTML): Dùng cho các khối nội dung lớn chứa cả mã HTML bên trong
+
+**Rel attribute:**
 
 ### III. HTML Entities - Character References
 
