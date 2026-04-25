@@ -314,6 +314,38 @@ Always check web browser support:
 | ÷         | Division              | &divide; |
 |           | Space                 | &nbsp;   |
 
+### V. Constraint validation
+
+1. pattern
+2. min
+3. max
+4. required
+5. step
+6. minLength
+7. maxLength
+
+=> **HTMLFormElement**: checkValidity(), reportValidity(), setCustomValidity()
+
+### VI. HTML attributes
+
+1. `fetchpriority`: img, link, script - Value - auto / high / low
+2. `tabindex`
+3. `accept`: server, input
+4. `autocomplete`: Value - on / off / name / email / current-password / new-password / tel / one-time-code
+5. `draggable`:
+    - Event `dragover`: Trình duyệt mặc định sẽ ngăn cản việc thả dữ liệu vào các phần tử khác. Phải gọi `event.preventDefault()`. trong sự kiện `ondragover` thì sự kiện `ondrop` mới có thể xảy ra
+    - Object `dataTransfer`: Nơi chứa dữ liệu đang được kéo. Có thể dùng nó để truyền thông tin (như ID, chuỗi văn bản, hoặc file).
+    - UX: Nên thay đổi con trỏ chuột trong CSS (`cursor: move;`) để người dùng biết phần tử đó có thể tương tác được.
+6. `translate`: Mặc định là yes
+7. `hidden`
+8. `is`
+9. `list`: input
+10. `role`
+11. `accesskey`: Alt + Phím
+12. `contenteditable`
+13. `autocapitalize`: Chỉ dành cho thiết bị di động (Value - sentences / words / characters / off)
+14. `spellcheck`
+
 ---
 
 ## Web page metadata
@@ -354,28 +386,27 @@ Always check web browser support:
 
 ## Web Optimization
 
-### I. Image Optimization
+### I. Fast loading HTML pages
 
-1. Luôn set width hoặc / và height cho image
-2. Media assets and licensing
-3. Responsive images: `<picture>`, `srcset`, `sizes`
+1. Giảm thiểu độ sâu của DOM
+2. Luôn sử dụng responsive images
+3. Luôn set width và height cho image
+4. Dùng `loading="lazy"` cho những hình ảnh không nằm trong vùng nhìn thấy ban đầu
+5. Dùng Pre-loading với `rel="preload"` và Pre-fetching `rel="prefetch"`
+6. Giảm số lượng HTTP Requests
+7. Luôn minify file HTML, CSS, JS
+8. Sử dụng CDN
+9. Caching
+
+### II. Image Optimization
+
+1. Media assets and licensing
+2. Responsive images: `<picture>`, `srcset`, `sizes`
     - `srcset` & `sizes`: Khi chỉ muốn cung cấp các phiên bản to/nhỏ khác nhau của cùng một nội dung ảnh
     - `<picture>`: Khi muốn thay đổi bố cục ảnh (Art Direction) hoặc hỗ trợ nhiều định dạng file khác nhau (WebP, AVIF, JPG)
 
-### II. Media Optimization
+### III. Media Optimization
 
 1. **Ảnh**: Ưu tiên WebP hoặc AVIF (cho tốc độ load nhanh nhất), dự phòng JPG/PNG
 2. **Video**: Ưu tiên WebM cho web hiện đại, dự phòng MP4
 3. **Audio**: Ưu tiên Opus (chất lượng cao ở bitrate thấp), dự phòng MP3
-
-### III. Constraint validation
-
-1. pattern
-2. min
-3. max
-4. required
-5. step
-6. minLength
-7. maxLength
-
-=> **HTMLFormElement**: checkValidity(), reportValidity(), setCustomValidity()
