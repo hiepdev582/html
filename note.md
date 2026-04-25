@@ -358,8 +358,17 @@ Always check web browser support:
 
 1. Luôn set width hoặc / và height cho image
 2. Media assets and licensing
+3. Responsive images: `<picture>`, `srcset`, `sizes`
+    - `srcset` & `sizes`: Khi chỉ muốn cung cấp các phiên bản to/nhỏ khác nhau của cùng một nội dung ảnh
+    - `<picture>`: Khi muốn thay đổi bố cục ảnh (Art Direction) hoặc hỗ trợ nhiều định dạng file khác nhau (WebP, AVIF, JPG)
 
-### II. Constraint validation
+### II. Media Optimization
+
+1. **Ảnh**: Ưu tiên WebP hoặc AVIF (cho tốc độ load nhanh nhất), dự phòng JPG/PNG
+2. **Video**: Ưu tiên WebM cho web hiện đại, dự phòng MP4
+3. **Audio**: Ưu tiên Opus (chất lượng cao ở bitrate thấp), dự phòng MP3
+
+### III. Constraint validation
 
 1. pattern
 2. min
