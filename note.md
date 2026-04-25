@@ -273,7 +273,16 @@ Always check web browser support:
 
 **Rel attribute:**
 
-### III. HTML Entities - Character References
+### III. Data attributes
+
+```html
+<div data-id="1" data-name="John">John Doe</div>
+```
+
+- Truy cập qua JS: `element.dataset.id` và `element.dataset.name`
+- Truy cập qua CSS: `element[data-id="1"]`
+
+### IV. HTML Entities - Character References
 
 | Character | Description           | Code     |
 | --------- | --------------------- | -------- |
