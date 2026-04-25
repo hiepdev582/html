@@ -372,6 +372,8 @@ Always check web browser support:
    `<meta property="og:type" content="website">`
 8. Đổi màu thanh địa chỉ trên trình duyệt di động
    `<meta name="theme-color" content="">`
+9. application-name
+   `<meta name="application-name" content="">`
 
 ### II. Applying JS to HTML
 
