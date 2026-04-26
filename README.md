@@ -356,6 +356,11 @@ Always check web browser support:
 12. `contenteditable`
 13. `autocapitalize`: Chỉ dành cho thiết bị di động (Value - sentences / words / characters / off)
 14. `spellcheck`
+15. `aria-label`: Các nút bấm chỉ có icon (như dấu X để đóng, hoặc icon hình kính lúp để tìm kiếm)
+16. `aria-expanded`: Cho biết trạng thái mở rộng của phần tử (true/false)
+17. `aria-live`:
+    - `aria-live="polite"`: Trình đọc màn hình sẽ đợi người dùng nghe hết nội dung hiện tại rồi mới đọc thông báo mới (Dùng cho thông báo thành công, cập nhật giá nhà...)
+    - `aria-live="assertive"`: Ngắt lời người dùng để đọc ngay lập tức (Dùng cho thông báo lỗi khẩn cấp, mất kết nối mạng)
 
 ---
 
