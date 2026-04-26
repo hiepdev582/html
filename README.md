@@ -204,11 +204,17 @@ Always check web browser support:
     </details>
     ```
 20. **Dialog**:
+
     ```html
     <dialog>
         <p>Content</p>
     </dialog>
     ```
+
+    - Phương thức: `show()`, `showModal()`, `close(value)` (`returnValue`)
+    - Pseudo-element: `::backdrop` (dùng cho `showModal()`)
+    - Kết hợp với `form` bằng cách dùng `method="dialog"`. Submit tự đóng form và trả ra value
+
 21. **Progress**:
     ```html
     <progress value="50" max="100"></progress>
