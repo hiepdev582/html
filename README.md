@@ -259,7 +259,7 @@ Always check web browser support:
         </p>
     </object>
     ```
-27. **Microdata: itemscope + itemprops + itemtype**
+27. **Microdata (DEPRECATED): itemscope + itemprops + itemtype**
     ```html
     <div itemscope itemtype="https://schema.org/Person">
         <span itemprop="name">John Doe</span>
@@ -267,7 +267,7 @@ Always check web browser support:
         <span itemprop="email">[EMAIL_ADDRESS]</span>
     </div>
     ```
-28. **Microformats**
+28. **Microformats (DEPRECATED)**
 
 **Class:**
 
@@ -428,3 +428,31 @@ Always check web browser support:
 1. **Ảnh**: Ưu tiên WebP hoặc AVIF (cho tốc độ load nhanh nhất), dự phòng JPG/PNG
 2. **Video**: Ưu tiên WebM cho web hiện đại, dự phòng MP4
 3. **Audio**: Ưu tiên Opus (chất lượng cao ở bitrate thấp), dự phòng MP3
+
+### IV. SEO Optimization
+
+1. JSON-LD (Schema.org)
+
+```json
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "iPhone 15 Pro Max",
+    "image": "https://example.com/iphone-15-pro-max.jpg",
+    "description": "Mô tả chi tiết sản phẩm iPhone 15 Pro Max...",
+    "brand": {
+        "@type": "Brand",
+        "name": "Apple"
+    },
+    "offers": {
+        "@type": "Offer",
+        "priceCurrency": "VND",
+        "price": "12345678",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+            "@type": "Organization",
+            "name": "Cellphone A"
+        }
+    }
+}
+```
