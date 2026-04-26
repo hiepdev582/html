@@ -313,6 +313,10 @@ Always check web browser support:
 | ×         | Multiplication        | &times;  |
 | ÷         | Division              | &divide; |
 |           | Space                 | &nbsp;   |
+| ♥         | Heart                 | &hearts; |
+| ♦         | Diamond               | &diams;  |
+| ♣         | Clubs                 | &clubs;  |
+| ♠         | Spades                | &spades; |
 
 ### V. Constraint validation
 
