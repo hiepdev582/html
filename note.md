@@ -301,6 +301,7 @@ Always check web browser support:
 | →         | Right arrow           | &rarr;   |
 | ↑         | Up arrow              | &uarr;   |
 | ↓         | Down arrow            | &darr;   |
+| ⇒         | Right arrow double    | &rArr;   |
 | "         | Double quote          | &quot;   |
 | '         | Single quote          | &apos;   |
 | °         | Degree                | &deg;    |
